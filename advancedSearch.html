@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.google.com/favicon.ico" />
+        <title>Advanced Search</title>
+        <style>
+        *{
+        font-family: sans-serif;
+        }
+        body {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        }
+        ul {
+        list-style-type: none;
+        overflow: hidden;
+        }
+        img {
+        float: left;
+        padding-left: 0px;
+        }
+        li {
+        float: right;
+        }
+        li a {
+        color: black;
+        display: block;
+        text-align: center;
+        padding: 10px 10px;
+        font-size:13px;
+        text-decoration: none;
+        }
+        li a:hover {
+        text-decoration: underline;
+        }
+        .advSrc {
+        color: #d93025;
+        font-size: 20px;
+        font-weight:lighter;
+        text-align: left;
+        padding: 25px 35px;
+        }
+        
+        hr{
+        height: 1px;
+        background-color: #DFDFDF;
+        border: none;
+        }
+        .formFill{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        margin: 0 -5px;
+        }
+        .lineHor{
+        display: flex;
+        justify-content: space-between;
+        }
+        .leftTxt{
+        display: flex;
+        color: black;
+        font-size: 18px;
+        text-align: right;
+        position: left;
+        padding-left: 35px;
+        margin: 0 5px;
+        }
+        .rightTxt{
+        display: flex;
+        color: #898989;
+        font-weight: bold;
+        width: 15%;
+        font-size: 13px;
+        text-align: left;
+        position: left;
+        padding-right: 150px;
+        border-left: 15px;
+        margin: 0 30px;
+        }
+        .lineQs{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7px;
+        margin: 0 5px;
+        }
+        .leftExp{
+        display: flex;
+        color: black;
+        width: 15%;
+        font-size: 13px;
+        text-align: left;
+        position: left;
+        padding-left: 35px;
+        margin: 0 5px;
+        }
+        .rightExp{
+        display: flex;
+        color: #898989;
+        width: 15%;
+        font-size: 10px;
+        text-align: left;
+        position: left;
+        padding-right: 150px;
+        border-left: 15px;
+        margin: 0 15px;
+        }
+        .typeBox{
+        display: flex;
+        text-align: left;
+        flex-grow: 1;
+        width: 575px;
+        height: 25px;
+        border:1px solid #dcdcdc;
+        }
+        .typeBox:focus-within{
+        box-shadow: 1px 1px 8px 1px #dcdcdc;
+        outline: 1px solid #4885ed;
+      }
+        .buttonSrc{
+        display: flex;
+        border-radius: 2px;
+        font-size: 11px;
+        font-weight: bold;
+        background-color: #4d90fe;
+        border: 1px solid #3079ed;
+        color: #fff;
+        height: 30px;
+        }
+        .buttonSrc:hover{
+        border: 1px solid #c8c8c8;
+        color:#808080;
+        }
+        .buttonSrc:focus{
+        border:1px solid #4885ed;
+        }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <ul>
+            <img height="25px" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <li><a href="imageSearch.html">Images</a></li>
+            <li><a href="index.html">Google Search</a></li>
+        </ul>
+        <div>
+            <h1 class="advSrc">Advanced Search</h1></br>
+        </div>
+        <hr></hr>
+        </br>
+        <div>
+        </div>
+        <div class="formFill">
+            <form action="https://google.com/search">
+                <div>
+                <div class="lineHor">
+                <span class="leftTxt">Find pages with...</span>
+                <label class="rightTxt">To do this in the search box.</label>
+                </div>
+                </div>
+                <div class="lineQs">
+                    <label class="leftExp">all these words:</label>
+                    <input class="typeBox" type="text" class="searchBox" name="as_q">
+                    <label class="rightExp">Type the important words: tri-colour rat terrier</label></br>
+                </div>
+                <div class="lineQs">
+                    <label class="leftExp">this exact word or phrase:</label>
+                    <input class="typeBox" type="text" class="searchBox" name="as_epq">
+                    <label class="rightExp">Put exact words in quotes: "rat terrier"</label></br>
+                </div>
+                <div class="lineQs">
+                        <label class="leftExp">any of these words:</label>
+                        <input class="typeBox" type="text" class="searchBox" name="as_oq">
+                        <label class="rightExp">Type OR between all the words you want: miniature OR standard</label></br>
+                </div>
+                <div class="lineQs">
+                    <label class="leftExp">none of these words:</label>
+                    <input class="typeBox" type="text" class="searchBox" name="as_eq">
+                    <label class="rightExp">Put a minus sign just before words that you don't want:</br>-rodent, -"Jack Russell"</label></br>
+                </div>
+                <div class="lineQs">
+                    <label class="leftExp"></label>
+                    <input class="buttonSrc" type="submit" value="Advanced Search">
+                    <label class="rightExp"></label></br>
+                </div>
+                <div>
+            </form>
+        </div>
+    </body>
+</html>
